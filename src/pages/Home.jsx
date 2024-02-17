@@ -2,7 +2,7 @@ import React from "react";
 
 function Home() {
   return (
-    <div className="grid justify-center content-center items-center text-center text-white bg-[#444EEE] w-screen max-h-screen">
+    <div className="grid justify-center content-center items-center text-center text-[#23286c] tracking-wider font-bold bg-[#b6b8d4] w-screen max-h-screen">
       <p className="mt-10 mb-10 text-3xl">Home</p>
       <div className="mb-10 text-left p-10">
         <p>
@@ -41,10 +41,9 @@ function Home() {
         </p>
         <br />
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis
-          corporis ex veniam sint accusantium voluptatum eveniet, minima debitis
-          corrupti optio ipsa accusamus quam quasi, alias error temporibus
-          adipisci mollitia?
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias porro
+          totam unde doloremque illo numquam dicta sit, repellendus minus
+          adipisci?
         </p>
       </div>
     </div>
