@@ -2,19 +2,11 @@ import { NavLink } from "react-router-dom";
 
 function Navigation() {
   return (
-    <div className="sticky h-12 bg-black p-3">
-      <NavLink to="/" className="text-white mr-8">
-        Home
-      </NavLink>
-      <NavLink to="/about" className="text-white mr-8">
-        About
-      </NavLink>
-      <NavLink to="/showroom" className="text-white mr-8">
-        Show Room
-      </NavLink>
-      <NavLink to="/tradeins" className="text-white mr-8">
-        Trade Ins
-      </NavLink>
+    <div className="sticky h-12 bg-black p-3 text-white grid grid-cols-12 gap-1">
+      <NavLink to="/">Home</NavLink>
+      <NavLink to="/about">About</NavLink>
+      <NavLink to="/showroom">Show Room</NavLink>
+      <NavLink to="/tradeins">Trade Ins</NavLink>
     </div>
   );
 }
