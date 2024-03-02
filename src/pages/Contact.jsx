@@ -7,6 +7,9 @@ function Contact() {
     SetMessage(
       "Thanks for contacting us. We will respond to you as soon as possible"
     );
+    document.getElementById("fullname").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("message").value = "";
   };
   return (
     <div className="grid justify-center content-center items-center text-center text-[#23286c] font-bold bg-[#b6b8d4] w-screen max-h-screen">
