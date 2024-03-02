@@ -17,6 +17,11 @@ function Contact() {
     fullname.value = "";
     email.value = "";
     imessage.value = "";
+    const inputs = document.getElementsByTagName("input");
+    for (let i = 0; i < inputs.length; i++) {
+      inputs[i].disabled = true;
+    }
+    document.getElementById("message").disabled = true;
   };
 
   return (
