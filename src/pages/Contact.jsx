@@ -36,12 +36,18 @@ function Contact() {
           name="fullname"
           id="fullname"
           required
-          className="mb-2"
+          className="mb-2 border-2 border-blue-950"
         />
         <label htmlFor="email" className="mb-2">
           Email
         </label>
-        <input type="email" name="email" id="email" required className="mb-2" />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+          className="mb-2 border-2 border-blue-950"
+        />
         <label htmlFor="message" className="mb-2">
           Send us a message
         </label>
@@ -50,11 +56,11 @@ function Contact() {
           id="message"
           cols="15"
           rows="11"
-          className="mb-2"
+          className="mb-2 border-2 border-blue-950"
         ></textarea>
         <input
           type="submit"
-          className="border-2 border-white w-20 p-2 m-auto bg-stone-300"
+          className="w-20 p-2 m-auto bg-blue-950 text-white"
         />
       </form>
       {contactComplete && <UserMessage userMessage={userMessage} />}
