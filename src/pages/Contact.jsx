@@ -1,32 +1,27 @@
 import { useState } from "react";
+import UserMessage from "./UserMessage";
 
 function Contact() {
   const [userMessage, SetUSerMessage] = useState("");
   const [contactComplete, setContactComplete] = useState(false);
-  const [fullName, setFullName] = useState("");
-  const [email, setEmail] = useState("");
-  const [messageInput, setMessageInput] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    SetUSerMessage(
-      "Thanks for contacting us. We will respond to you as soon as possible"
-    );
-    setContactComplete(true);
-
     const fullname = document.getElementById("fullname");
     const email = document.getElementById("email");
     const imessage = document.getElementById("message");
-    setFullName(fullname.value);
-    setEmail(email.value);
-    setMessageInput(imessage.value);
+    SetUSerMessage(
+      `Thank You for contacting us ${fullname.value}, We will respond to you as soon as possible`
+    );
+    setContactComplete(true);
     fullname.value = "";
     email.value = "";
     imessage.value = "";
   };
+
   return (
     <div className="grid justify-center content-center items-center text-center text-[#23286c] font-bold bg-[#b6b8d4] w-screen max-h-screen">
-      <p className="mt-5 mb-5 text-3xl">Contact Us</p>
+      <p className="mt-1 mb-2 text-3xl">Contact Us</p>
       <form action="#" onSubmit={handleSubmit} className="grid w-96 m-auto">
         <label htmlFor="fullname" className="mb-2">
           Full Name
@@ -49,7 +44,7 @@ function Contact() {
           name="message"
           id="message"
           cols="15"
-          rows="5"
+          rows="11"
           className="mb-2"
         ></textarea>
         <input
@@ -57,7 +52,7 @@ function Contact() {
           className="border-2 border-white w-20 p-2 m-auto bg-stone-300"
         />
       </form>
-      {}
+      {contactComplete && <UserMessage userMessage={userMessage} />}
     </div>
   );
 }
