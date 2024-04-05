@@ -2,7 +2,7 @@ import React from "react";
 
 function Home() {
   return (
-    <div className="grid justify-center content-center items-center text-center text-[#23286c] tracking-wider font-bold bg-[#b6b8d4] w-screen max-h-screen">
+    <div className="grid justify-center content-center items-center text-center text-[#23286c] tracking-wider font-bold w-screen h-full overflow-hidden">
       <p className="mt-10 mb-10 text-3xl">Home</p>
       <div className="mb-10 text-left p-10">
         <p>
