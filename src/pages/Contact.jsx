@@ -27,7 +27,7 @@ function Contact() {
   return (
     <div className="grid justify-center content-center items-center text-center text-[#23286c] font-bold w-screen max-h-screen">
       <p className="mt-10 mb-10 text-3xl">Contact Us</p>
-      <form action="#" onSubmit={handleSubmit} className="grid w-96 m-auto">
+      <form action="#" onSubmit={handleSubmit} className="grid w-96 mx-auto">
         <label htmlFor="fullname" className="mb-2">
           Full Name
         </label>
