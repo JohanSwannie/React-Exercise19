@@ -2,7 +2,7 @@ import React from "react";
 
 function Tradeins() {
   return (
-    <div className="grid justify-center content-center items-center text-center text-[#23286c] tracking-wider font-bold bg-[#b6b8d4] w-screen max-h-screen">
+    <div className="grid justify-center content-center items-center text-center text-[#23286c] tracking-wider font-bold w-screen max-h-screen">
       <p className="mt-10 mb-10 text-3xl">Trade Ins</p>
       <div className="mb-10 text-left p-10">
         <p>
